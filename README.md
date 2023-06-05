@@ -33,6 +33,7 @@ Table of Contents :bookmark_tabs:
 =================
 - [Features](#features)
 - [Getting Started](#getting-started)
+- [Pre-Requisite](#Pre-Requisite)
 - [Usage](#usage)
 - [Executive Summary](#executive-summary)
 - [Instacart Overview](#instacart-overview)
