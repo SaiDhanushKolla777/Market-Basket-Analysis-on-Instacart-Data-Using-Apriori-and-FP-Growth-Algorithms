@@ -1,6 +1,13 @@
 # Instacart Market Basket Analysis
 <p align="center"><img src="https://user-images.githubusercontent.com/45563371/89464234-b20b9a00-d7a2-11ea-8db6-02325003f06d.jpg" /></p>
 
+
+
+
+## Introduction
+This repository provides an implementation of market basket analysis using the Apriori and FP-Growth algorithms. Market basket analysis is a technique used to discover associations between products based on their co-occurrence in transactions. It is commonly used in retail and e-commerce to identify frequently co-purchased items and make data-driven decisions for marketing, inventory management, and customer segmentation.
+
+
 ## Problem Statement
 The retail grocery industry in the United States faces a precarious economic environment. Due 
 primarily to competition from warehouse clubs, supercenters, and e-commerce, retail grocery sales 
@@ -21,8 +28,12 @@ providing unique and insightful methods for the online grocery stores to gain an
 competitors and at the same time, incorporating analytical tools and technology to improve their 
 efficiency and productivity, providing value for all stakeholders. 
 
+
 Table of Contents :bookmark_tabs:
 =================
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
 - [Executive Summary](#executive-summary)
 - [Instacart Overview](#instacart-overview)
 - [Instacart Business Model](#instacart-business-model)
@@ -40,6 +51,36 @@ Table of Contents :bookmark_tabs:
 - [References](#references)
 - [Appendices](#appendices)
 - [Code and Resources Used](#code-and-resources-used)
+
+
+
+
+
+
+## Features
+<ul>
+  <li><strong>Apriori algorithm implementation:</strong> The Apriori algorithm is a classic algorithm used for market basket analysis. It efficiently generates frequent itemsets by iteratively applying a set of candidate generation and pruning rules.</li>
+  <li><strong>FP-Growth algorithm implementation:</strong> The FP-Growth algorithm is a more efficient alternative to the Apriori algorithm. It constructs a compact data structure called an FP-Tree to mine frequent itemsets without generating candidate itemsets.</li>
+  <li><strong>Transaction data processing:</strong> The code supports loading transactional data from various file formats (e.g., CSV, Excel) and converting it into a suitable format for market basket analysis.</li>
+  <li><strong>Association rule generation:</strong> The implementation can generate association rules from the frequent itemsets, including support, confidence, and lift measures.</li>
+</ul>
+
+# Getting Started
+
+## Pre-Requisites
+<ul>
+  <li><strong>Python 3.x:</strong> Make sure you have Python 3.x installed on your system.</li>
+  <li><strong>Dependencies:</strong> Install the required dependencies by running <code>pip install -r requirements.txt</code>.</li>
+</ul>
+
+
+## Usage
+<ol>
+  <li><strong>Prepare your transaction data:</strong> Ensure your transaction data is in a suitable format (e.g., CSV) with one transaction per row and items separated by commas.</li>
+  <li><strong>Modify the <code>config.py</code> file:</strong> Update the configuration file with the appropriate parameters, such as the input file path, support threshold, confidence threshold, etc.</li>
+  <li><strong>Run the code:</strong> Execute the main script by running <code>python main.py</code>. This will perform market basket analysis using both the Apriori and FP-Growth algorithms.</li>
+  <li><strong>Analyze the results:</strong> The code will generate frequent itemsets and association rules, which can be further analyzed to drive insights and make data-driven decisions.</li>
+</ol>
 
 ## Executive Summary
 The retail grocery industry in the United States faces a precarious economic environment. Due primarily to competition from warehouse clubs, supercenters, and e-commerce, retail grocery sales have underperformed the U.S. retail sector and the overall U.S. economy, and employment growth in the industry has been stagnant. Yet, a large proportion of consumers maintain a strong preference for shopping at retail grocery stores, and total grocery industry sales and employment still exceed sales and employment at warehouse clubs/supercenters and e-commerce retailers. To compete in this setting, many retail grocers are turning to third-party online grocery delivery services offering online shopping and same-day grocery delivery, the largest of which is Instacart.
